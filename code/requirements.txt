@@ -1,0 +1,22 @@
+# LLM client (HF Inference Providers exposes an OpenAI-compatible endpoint)
+# Floor pin only: v1+ is required because v0 had a breaking API redesign.
+openai>=1.0
+
+# Env loading
+python-dotenv
+
+# Sparse / lexical retrieval (BM25). Pairs with dense bge-m3 from HF API.
+rank_bm25
+
+# Data handling
+numpy
+pandas
+
+# Progress bars
+tqdm
+
+# HuggingFace SDK (token validation, model downloads)
+huggingface_hub
+
+# Test runner — `pytest code/tests` runs the offline test suite.
+pytest>=7
